@@ -20,7 +20,8 @@ The tool expects a FASTQ file as input.
 
 ## Project structure
 
-- `fastq_stats.py`: main CLI script
+- `fastq_stats.py`: CLI script
+- `core.py´: core logic for FASTQ processing
 - `data/test.fastq`: example FASTQ file
 - `README.md`: project documentation
 
