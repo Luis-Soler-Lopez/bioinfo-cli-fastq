@@ -12,4 +12,4 @@ Simple command-line tool to compute basic statistics from FASTQ files.
 ## Usage
 
 ```bash
-python3 count_reads.py --input test.fastq
+python3 count_reads.py --input data/test.fastq
