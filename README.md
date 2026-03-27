@@ -25,6 +25,13 @@ The tool expects a FASTQ file as input.
 - `data/test.fastq`: example FASTQ file
 - `README.md`: project documentation
 
+## Testing
+
+Run tests with:
+
+```bash
+pytest
+
 ## Notes
 
 This project was built as an introductory bioinformatics engineering exercise focused on:
