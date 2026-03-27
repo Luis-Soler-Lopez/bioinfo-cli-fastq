@@ -1,3 +1,5 @@
+import pytest
+
 from core import count_reads, average_read_length, gc_content
 
 
@@ -14,3 +16,7 @@ def test_average_read_length():
 def test_gc_content():
     result = gc_content("data/test.fastq")
     assert result == 8 / 12
+
+def test_missing_file_raises_error():
+	with pytest.raises(FileNotFoundError):
+		count_reads("data/does_not_exit.fastq")

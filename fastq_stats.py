@@ -10,13 +10,17 @@ def main():
 
 	file_path = args.input
 
-	reads = count_reads(file_path)
-	avg_len = average_read_length(file_path)
-	gc = gc_content(file_path)
+	try:
+		reads = count_reads(file_path)
+		avg_len = average_read_length(file_path)
+		gc = gc_content(file_path)
+		
+		print("Reads:", reads)
+		print("Avg length:", avg_len)
+		print("GC content:", gc)
 
-	print("Reads:", reads)
-	print("Avg length:", avg_len)
-	print("GC content:", gc)
+	except FileNotFoundError:
+		print("Error: file not found")
 
 if __name__ == "__main__":
 	main()
